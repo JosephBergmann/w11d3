@@ -14,7 +14,7 @@ export default function CoffeeProvider(props) {
     const bean = coffeeBeans.find((bean) => {
       return Number(bean.id) === Number(coffeeBeanId);
     });
-    setCoffeeBean(bean);
+    setCoffeeBean(bean); 
   };
 
   return (
