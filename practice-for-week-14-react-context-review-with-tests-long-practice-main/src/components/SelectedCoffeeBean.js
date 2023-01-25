@@ -1,13 +1,13 @@
+import { useCoffeeContext } from "../context/CoffeeContext";
 
-const SelectedCoffeeBean = (props) => {
-  console.log(props)
-
-  // return null;
+const SelectedCoffeeBean = () => {
+  const coffeeContext = useCoffeeContext();
+  console.log(coffeeContext);
   return (
     <div className="selected-coffee">
-      <h2>{props.name}</h2>
+      <h2>{coffeeContext.coffeeBean.name}</h2>
     </div>
-  )
-}
+  );
+};
 
 export default SelectedCoffeeBean;
